@@ -5,65 +5,116 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cestovka</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="import.css">
 </head>
 
 <body>
-	Last minute
-	Destinace
-	Časté otázky
+	<nav class="menu">
+		<img class="logo" src="podklady/logo.svg" alt="logo" >
+		<ul>
+		<li>Last minute</li>
+		<li>Destinace</li>
+		<li class="zvyrazneni__menu">Časté otázky</li>
+		</ul>
+	</nav>
+	<section class="destinace">
+		<div class="dlazdice__velka">
+			<p class="zvyrazneni__cena">17 600 Kč</p>
+			<p class="nadpis__dlazdice">Pohoda pod palmami</h2> 
+			<p class="popisek__dlazdice">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+		</div>
+		<div class="dlazdice__mala--nahore">
+			<p class="zvyrazneni__cena">8 490 Kč</p>
+			<p class="nadpis__dlazdice--maly">Klid u jezera</p>
+		</div>
+		<div class="dlazdice__mala--dole">	
+			<p class="zvyrazneni__cena">4 990 Kč</p>
+			<p class="nadpis__dlazdice--maly">Výlet na kole</p3>
+		</div>
+	</section>
 
-	17 600 Kč
-	Pohoda pod palmami
-	Nejlepší dovolená pro nejvíc nejlínější lidi na světě
+	<section class="vyhody">
+		<article class="box__ikona">
+			<div class="ikona">
+				<img src="podklady/map.svg" alt="ikona cílový bod">
+			</div>
+			<div class="popisek__box">
+				<p class="popisek__box--nadpis">Podpora na místě</p>
+				<p class="popisek__box--text">V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
+			</div>
+		</article>
+		<article class="box__ikona">
+			<div class="ikona">
+				<img src="podklady/plane.svg" alt="ikona letadlo">
+			</div>
+			<div class="popisek__box">
+				<p class="popisek__box--nadpis">Služby na letišti</p>
+				<p class="popisek__box--text">Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+			</div>
+		</article>
+		<article class="box__ikona">
+			<div class="ikona">
+				<img src="podklady/globe.svg" alt="ikona globus">
+			</div>
+			<div class="popisek__box">
+				<p class="popisek__box--nadpis">Do celého světa</p>
+				<p class="popisek__box--text">Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+			</div>
+		</article>
+		<article class="box__ikona">
+			<div class="ikona">
+				<img src="podklady/shield.svg" alt="ikona štít">
+			</div>
+			<div class="popisek__box">
+				<p class="popisek__box--nadpis">Vaše bezpečí</h3>
+				<p class="popisek__box--text">Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
+			</div>
+		</article>
+	</section>
 
-	8 490 Kč
-	Klid u jezera
+	<header>Last minute zájezdy</header>
+	<section class="last">
+			<div class="dlazdice__velka">
+			<p class="zvyrazneni__cena">15 900 Kč</p>
+			<p class="nadpis__dlazdice">Romantika u horského jezera</p>
+			<p class="popisek__dlazdice">Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
+		</div>
+		<div class="dlazdice__mala--nahore">
+			<p class="zvyrazneni__cena">18 500 Kč</p>
+			<p class="nadpis__dlazdice--maly">Grand Canyon</p>	
+		</div>	
+		<div class="dlazdice__mala--dole">
+			<p class="zvyrazneni__cena">8 900 Kč</p>
+			<p class="nadpis__dlazdice--maly">Pěšky po Kanárských ostrovech</p>
+		</div>		
+	</section>
 
-	4 990 Kč
-	Výlet na kole
+	<header>Novinky</header>
+	<section class="novinky">
+		<article class="box">
+			<p class="datum">15. 8. 2020</p>
+			<p class="popisek__box--nadpis">Magický Zanzibar</p>
+			<p class="popisek__box--text">Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře,
+	exotická flóra i fauna.</p>
+		</article>
+		<article class="box">
+			<p class="datum">31. 9. 2020</p>
+			<p class="popisek__box--nadpis">Návrat českých občanů ze zahraničí</p>
+			<p class="popisek__box--text">Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření Ministerstva zdravotnictví ČR.</p>
+		</article>
+		<article class="box">
+			<p class="datum">6. 10. 2020</p>
+			<p class="popisek__box--nadpis">Na Kubu s PCR testem</p>
+			<p class="popisek__box--text">Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.</p>
+		</article>
+	</section>
 
-	Podpora na místě
-	V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.
-
-	Služby na letišti
-	Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.
-
-	Do celého světa
-	Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.
-
-	Vaše bezpečí
-	Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.
-
-	Last minute zájezdy
-
-	18 500 Kč
-	Grand Canyon
-
-	8 900 Kč
-	Pěšky po Kanárských ostrovech
-
-	15 900 Kč
-	Romantika u horského jezera
-	Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.
-
-	Novinky
-
-	15. 8. 2020
-	Magický Zanzibar
-	Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře,
-	exotická flóra i fauna.
-
-	31. 9. 2020
-	Návrat českých občanů ze zahraničí
-	Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření
-	Ministerstva zdravotnictví ČR.
-
-	6. 10. 2020
-	Na Kubu s PCR testem
-	Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před
-	příletem do destinace.
-
-	©2021, Czechitas
+	<footer>
+	<p>©2021, Czechitas</p>
+	</footer>
 </body>
 
 </html>

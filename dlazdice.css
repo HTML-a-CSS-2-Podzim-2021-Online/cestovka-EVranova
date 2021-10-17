@@ -1,0 +1,132 @@
+.dlazdice__velka, .dlazdice__mala--nahore, .dlazdice__mala--dole {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    color: var(--text-svetly);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    margin: 20px auto;
+}
+
+.dlazdice__velka {
+    height: 200px;
+    margin-top: 0;
+}
+
+.dlazdice__mala--nahore, .dlazdice__mala--dole {
+    height: 130px;
+}
+
+.destinace .dlazdice__velka {
+    background-image: url(podklady/palmy.jpg);
+}
+
+.destinace .dlazdice__mala--nahore {
+    background-image: url(podklady/jezero.jpg);
+}
+
+.destinace .dlazdice__mala--dole {
+    background-image: url(podklady/nakole.jpg);
+}
+
+.last .dlazdice__velka {
+    background-image: url(podklady/lodicka.jpg);
+}
+
+.last .dlazdice__mala--nahore {
+    background-image: url(podklady/podkova.jpg);
+}
+
+.last .dlazdice__mala--dole {
+    background-image: url(podklady/zatoka.jpg);
+}
+
+.nadpis__dlazdice, .nadpis__dlazdice--maly {
+    font-weight: bold;
+    margin: 0 0 0 20px;
+}
+
+.nadpis__dlazdice {
+    grid-area: 5 / 1 / 6 / -1;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 20px 0 0 20px;
+}
+
+.popisek__dlazdice {
+    grid-area: 7 / 1 / 8 / -1;
+    padding-right: 10px;
+    font-size: 13px;
+    margin: 0 0 0 20px;
+}
+
+.nadpis__dlazdice--maly {
+    grid-area: 5 / 1 / 6 / -1;
+    font-size: 17px;
+}
+
+@media (min-width: 600px) {
+    .dlazdice__velka {
+        flex-basis: 100%;
+        height: 380px;
+    }
+    .dlazdice__mala--nahore, .dlazdice__mala--dole {
+        flex-basis:calc(50% - 10px);
+        margin: 0;
+        height: 180px;
+    }
+
+    .nadpis__dlazdice {
+        font-size: 28px;
+        grid-area: 7 / 1 / 8 / -1;
+        margin-top: 0;
+    }
+
+    .popisek__dlazdice {
+        font-size: 15px;
+        grid-area: 8 / 1 / 9 / -1;
+    }
+
+    .nadpis__dlazdice--maly {
+        grid-area: 6 / 1 / 7 / -1;
+        font-size: 19px;
+    }    
+}
+
+@media (min-width: 960px) {
+
+    .destinace .dlazdice__velka {
+        grid-area: 1 / 1 / 3 / 3;
+        margin: 20px 10px 0 0;
+    }
+    .destinace .dlazdice__mala--nahore {
+        grid-area: 1 / 3 / 2 / 4;
+        margin: 20px 0 10px 10px;
+    }
+
+    .destinace .dlazdice__mala--dole {
+        grid-area: 2 / 3 / 3 / 4;
+        margin: 10px 0 0 10px;
+    }
+
+    .last .dlazdice__velka {
+        grid-area: 1 / 2 / 3 / 4;
+        margin: 0 0 0 10px;
+    }
+    .last .dlazdice__mala--nahore {
+        grid-area: 1 / 1 / 2 / 2;
+        margin: 0 10px 0px 0;
+    }
+
+    .last .dlazdice__mala--dole {
+        grid-area: 2 / 1 / 3 / 2;
+        margin: 10px 10px 0 0;
+    }
+
+    .popisek__dlazdice {
+        font-size: 15px;
+        grid-area: 8 / 1 / 9 / -1;
+    }
+}

@@ -1,0 +1,58 @@
+.zvyrazneni__menu, .zvyrazneni__cena {
+    color: var(--text-svetly);
+    background-color: var(--hlavni-barva);
+}
+
+.menu .zvyrazneni__menu {
+    color: var(--text-svetly);
+    font-weight: bold;
+    padding: 25px 10px;
+}
+
+.zvyrazneni__cena {
+    grid-area: 1 / 1 / 2 / 4;
+    display: inline-block;
+    padding: 10px 5px;
+    margin: 15px 5px 0 15px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .dlazdice__velka .zvyrazneni__cena {
+        grid-area: 1 / 1 / 2 / 3;
+        margin: 20px 40px 0 20px;
+        padding: 12px 5px;
+    }
+
+    .dlazdice__mala--nahore .zvyrazneni__cena {
+        grid-area: 1 / 1 / 2 / 4;
+        margin: 20px 5px 0 20px;
+        padding: 12px 5px;
+    }
+
+    .dlazdice__mala--dole .zvyrazneni__cena {
+        grid-area: 1 / 1 / 2 / 4;
+        margin: 20px 10px 0 20px;
+        padding: 12px 5px;
+    }
+}
+
+@media (min-width: 960px) {
+    .dlazdice__velka .zvyrazneni__cena {
+        grid-area: 1 / 1 / 2 / 3;
+        margin: 15px 20px 0 20px;
+        padding: 10px 8px;
+    }
+
+    .dlazdice__mala--nahore .zvyrazneni__cena {
+        grid-area: 1 / 1 / 2 / 5;
+        margin: 15px 20px 0 20px;
+        padding: 10px 8px;
+    }
+
+    .dlazdice__mala--dole .zvyrazneni__cena {
+        grid-area: 1 / 1 / 2 / 5;
+        margin: 15px 20px 0 20px;
+        padding: 10px 8px;
+    }
+}

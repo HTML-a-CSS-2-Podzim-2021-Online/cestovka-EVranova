@@ -1,0 +1,95 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px auto;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+section, nav, footer {
+    margin-bottom:40px;
+}
+:root {
+    --hlavni-barva: #F03000;
+    --text-svetly: white;
+    --text-tmavy: black;
+    --pozadi-box: rgb(191, 193, 194);
+    --text-datum: grey;
+}
+
+header {
+    color: var(--text-tmavy);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.787);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.datum {
+    color: var(--text-datum);
+    margin-top: 0;
+}
+
+@media (min-width: 600px) {
+
+    .destinace, .last {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .vyhody {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    header {
+        font-size: 21px;
+        padding-left: 20px;
+    }
+
+    .datum {
+        padding: 15px 20px 0 20px;
+    }  
+}
+
+
+@media (min-width: 960px) {
+    body {
+        max-width: 1100px;
+    }
+
+    header {
+        padding-left: 20px;
+    }
+
+    .destinace, .last  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 20px;
+    }
+
+    .last {
+        margin-bottom: 40px;
+    }
+
+    .vyhody {
+        flex-wrap: nowrap;
+    }
+
+    .novinky {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}

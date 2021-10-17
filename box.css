@@ -1,0 +1,74 @@
+.box, .box__ikona {
+    background-color: var(--pozadi-box);
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.box__ikona {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ikona {
+    flex-basis: 25%;
+    text-align: center;   
+    padding-top: 15px;
+}
+
+.popisek__box {
+    flex-basis: 75%;
+}
+
+.popisek__box--nadpis {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--hlavni-barva);
+    margin: 0;
+}
+ .popisek__box--text {
+     margin-bottom: 0;
+}
+
+
+@media (min-width: 600px) {
+    .box, .box__ikona {
+        padding: 0;
+    }
+
+    .box__ikona {
+        flex-basis: calc(50% - 10px);
+        margin: 0 0 20px 0; 
+        height: 200px;
+    }
+
+    .ikona {
+        flex-basis: 100%;
+        text-align: center;   
+    }
+
+    .popisek__box {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .popisek__box--nadpis {
+        padding: 0 20px;
+    }
+    
+    .popisek__box--text {
+        padding: 0 20px 15px 20px;
+    }
+}
+
+
+@media (min-width: 960px) {
+    .box__ikona {
+        flex-basis: calc((100% - 60px) / 4);
+    }
+
+    .box {
+        margin: 0;
+        flex-basis: calc((100% - 40px) / 3);
+    }
+}

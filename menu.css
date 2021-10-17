@@ -1,0 +1,51 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.menu ul {
+    flex-basis: 100%;
+    padding: 0;
+    text-align: center;
+    margin: 30px auto 0 auto;
+}
+
+.menu li {
+    display: inline-block;
+    width: calc((100% - 30px) / 3);
+    padding: 5px 0;
+    color: var(--hlavni-barva);
+}
+
+@media (min-width: 600px) {
+  .menu {
+      font-size: 17px;
+      flex-wrap: nowrap;
+      align-items: center;
+  }
+  .menu ul {
+      margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .menu li {
+        flex-basis: 30%; 
+    }
+
+    .menu img {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 960px) {
+.menu {
+    margin-bottom: 20px;
+}
+
+    .menu li {
+        flex-basis: 20%; 
+    }
+}
